@@ -23,6 +23,9 @@ spec "plugins.navbuddy" -- popup with breadcrumbs
 spec "plugins.package-info" -- dependency management
 spec "plugins.vim-rooter" -- change working directory to root of project
 spec "plugins.notify" -- popup window for notifications
+spec "plugins.spectre" -- search and replace
+spec "plugins.ssr" -- search and replace (structural)
+spec "plugins.undotree" -- undo tree
 
 -- ui
 spec "plugins.colorscheme" -- colorschemes
@@ -39,6 +42,8 @@ spec "plugins.rainbow" -- colored delimiters with treesitter
 spec "plugins.todo" -- highlight and list todo comments
 spec "plugins.ccc" -- color picker and highlighter
 spec "plugins.bufresize" -- keep buffer dimensions in proportion
+spec "plugins.hlslens" -- better glance at matched information
+spec "plugins.markdown-preview" -- live markdown preview server
 
 -- lsp / formatting
 spec "plugins.mason" -- package manager for LSP, linters, and formatters

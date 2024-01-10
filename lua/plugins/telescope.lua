@@ -28,7 +28,7 @@ local M = {
     { "<leader>fp", "<cmd>lua require('telescope').extensions.projects.projects()<cr>", desc = "Projects" },
     { "<leader>fr", "<cmd>Telescope repo list<cr>", desc = "Repositories" },
     { "<leader>fR", "<cmd>Telescope registers<cr>", desc = "Registers" },
-    { "<leader>fs", "<cmd>Telescope grep_string<cr>", desc = "Find String" },
+    -- { "<leader>fs", "<cmd>Telescope grep_string<cr>", desc = "Find String" },
 
     { "<leader>go", "<cmd>Telescope git_status<cr>", desc = "Open changed file" },
     { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "Checkout branch" },
@@ -181,14 +181,14 @@ function M.config()
       repo = {
         list = {
           fd_opts = {
-            "--no-ignore-vcs"
+            "--no-ignore-vcs",
           },
           search_dirs = {
-            "/data/workspace"
-          }
-        }
-      }
-    }
+            "/data/workspace",
+          },
+        },
+      },
+    },
   }
 end
 
