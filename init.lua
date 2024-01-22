@@ -75,7 +75,7 @@ spec "plugins.trouble" -- diagnostics, references, quickfix, location list
 spec "plugins.pde.go" -- golang specific plugins
 
 -- ai
-spec "plugins.codeium" -- copilot alternative
+-- spec "plugins.codeium" -- copilot alternative
 
 -- lazy --
 require "core.lazy" -- lazy plugin manager
