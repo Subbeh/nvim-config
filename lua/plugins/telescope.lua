@@ -24,6 +24,7 @@ local M = {
     { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help" },
     { "<leader>fH", "<cmd>Telescope highlights<cr>", desc = "Highlights" },
     { "<leader>fk", "<cmd>Telescope keymaps<cr>", desc = "Keymaps" },
+    { "<leader>fl", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Find local" },
     { "<leader>fo", "<cmd>Telescope oldfiles<cr>", desc = "Recent Files" },
     { "<leader>fp", "<cmd>lua require('telescope').extensions.projects.projects()<cr>", desc = "Projects" },
     { "<leader>fr", "<cmd>Telescope repo list<cr>", desc = "Repositories" },
@@ -113,19 +114,33 @@ function M.config()
     },
     pickers = {
       live_grep = {
-        theme = "dropdown",
+        -- theme = "dropdown",
       },
 
       grep_string = {
-        theme = "dropdown",
+        -- theme = "dropdown",
       },
 
       find_files = {
+        -- find_command = {
+        --   "rg",
+        --   "--files",
+        --   "--hidden",
+        --   "--unrestricted",
+        --   "-L",
+        --   "-g",
+        --   "!.git",
+        --   "-g",
+        --   "!.direnv",
+        -- },
         find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
-        theme = "dropdown",
+        -- theme = "dropdown",
         previewer = true,
         hidden = true,
         path_display = filenameFirst,
+        layout_config = {
+          height = 0.70,
+        },
       },
 
       buffers = {
@@ -140,11 +155,6 @@ function M.config()
             ["dd"] = actions.delete_buffer,
           },
         },
-      },
-
-      planets = {
-        show_pluto = true,
-        show_moon = true,
       },
 
       colorscheme = {

@@ -7,4 +7,10 @@ return {
       vim.g.mkdp_filetypes = { "markdown" }
     end,
   },
+  {
+    "vim-pandoc/vim-pandoc",
+  },
+  {
+    "vim-pandoc/vim-pandoc-syntax",
+  },
 }

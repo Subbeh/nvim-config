@@ -26,6 +26,7 @@ spec "plugins.notify" -- popup window for notifications
 spec "plugins.spectre" -- search and replace
 spec "plugins.ssr" -- search and replace (structural)
 spec "plugins.undotree" -- undo tree
+-- spec "plugins.neorg" -- note taking plugin
 
 -- ui
 spec "plugins.colorscheme" -- colorschemes
@@ -43,7 +44,8 @@ spec "plugins.todo" -- highlight and list todo comments
 spec "plugins.ccc" -- color picker and highlighter
 spec "plugins.bufresize" -- keep buffer dimensions in proportion
 spec "plugins.hlslens" -- better glance at matched information
-spec "plugins.markdown-preview" -- live markdown preview server
+spec "plugins.markdown" -- markdown plugins
+spec "plugins.leap" -- motion plugin for faster searches
 
 -- lsp / formatting
 spec "plugins.mason" -- package manager for LSP, linters, and formatters

@@ -89,15 +89,16 @@ function M.config()
 
   local servers = {
     "ansiblels",
-    "lua_ls",
-    "cssls",
-    "html",
-    "pyright",
     "bashls",
-    "jsonls",
-    "yamlls",
-    "marksman",
+    "cssls",
     "gopls",
+    "html",
+    "jsonls",
+    "lua_ls",
+    "marksman",
+    "pyright",
+    "terraformls",
+    "yamlls",
   }
 
   local default_diagnostic_config = {

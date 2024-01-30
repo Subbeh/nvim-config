@@ -20,8 +20,14 @@ return {
     i(2, "value"),
   }),
 
-  s({ trig = "pf", name = "Formatted Printf", dscr = "Insert a formatted print statement" }, {
+  s({ trig = "pf", name = "Printf", dscr = "Insert a formatted print statement" }, {
     t 'fmt.Printf("%#v\\n", ',
+    i(1, "value"),
+    t ")",
+  }),
+
+  s({ trig = "pn", name = "Println", dscr = "Insert a printline statement" }, {
+    t "fmt.Println(",
     i(1, "value"),
     t ")",
   }),
