@@ -9,7 +9,7 @@ function M.config()
     on_config_done = nil,
     manual_mode = false,
     detection_methods = { "pattern" },
-    patterns = { ".git", "mod.go", "_darcs", "Makefile", "package.json", "index.norg" },
+    patterns = { ".git", "mod.go", "_darcs", "Makefile", "package.json", ".obsidian" },
     ignore_lsp = {},
     exclude_dirs = {},
     show_hidden = false,

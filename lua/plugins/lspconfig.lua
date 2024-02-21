@@ -91,6 +91,7 @@ function M.config()
     "ansiblels",
     "bashls",
     "cssls",
+    "eslint",
     "gopls",
     "html",
     "jsonls",
@@ -98,6 +99,7 @@ function M.config()
     "marksman",
     "pyright",
     "terraformls",
+    "tsserver",
     "yamlls",
   }
 

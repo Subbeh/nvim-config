@@ -44,7 +44,7 @@ spec "plugins.todo" -- highlight and list todo comments
 spec "plugins.ccc" -- color picker and highlighter
 spec "plugins.bufresize" -- keep buffer dimensions in proportion
 spec "plugins.hlslens" -- better glance at matched information
-spec "plugins.markdown" -- markdown plugins
+-- spec "plugins.markdown" -- markdown plugins
 spec "plugins.leap" -- motion plugin for faster searches
 
 -- lsp / formatting
@@ -74,7 +74,9 @@ spec "plugins.dap" -- debug adapter protocol client -- TODO
 spec "plugins.trouble" -- diagnostics, references, quickfix, location list
 
 -- pde
-spec "plugins.pde.go" -- golang specific plugins
+spec "plugins.pde.go"
+spec "plugins.pde.markdown"
+-- spec "plugins.pde.terraform"
 
 -- ai
 -- spec "plugins.codeium" -- copilot alternative

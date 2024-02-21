@@ -94,6 +94,8 @@ function M.config()
         "--smart-case",
         "--hidden",
         "--glob=!.git/",
+        "--glob=!.obsidian/",
+        "--glob=!.terraform/",
       },
 
       mappings = {
@@ -122,18 +124,17 @@ function M.config()
       },
 
       find_files = {
-        -- find_command = {
-        --   "rg",
-        --   "--files",
-        --   "--hidden",
-        --   "--unrestricted",
-        --   "-L",
-        --   "-g",
-        --   "!.git",
-        --   "-g",
-        --   "!.direnv",
-        -- },
-        find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
+        find_command = {
+          "rg",
+          "--files",
+          "--hidden",
+          "-g",
+          "!.git",
+          "-g",
+          "!.obsidian",
+          "-g",
+          "!.terraform",
+        },
         -- theme = "dropdown",
         previewer = true,
         hidden = true,
