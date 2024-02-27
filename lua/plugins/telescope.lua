@@ -29,6 +29,7 @@ local M = {
     { "<leader>fp", "<cmd>lua require('telescope').extensions.projects.projects()<cr>", desc = "Projects" },
     { "<leader>fr", "<cmd>Telescope repo list<cr>", desc = "Repositories" },
     { "<leader>fR", "<cmd>Telescope registers<cr>", desc = "Registers" },
+    -- { "<leader>fs", require("auto-session.session-lens").search_session, desc = "Sessions" },
     -- { "<leader>fs", "<cmd>Telescope grep_string<cr>", desc = "Find String" },
 
     { "<leader>go", "<cmd>Telescope git_status<cr>", desc = "Open changed file" },
@@ -96,6 +97,7 @@ function M.config()
         "--glob=!.git/",
         "--glob=!.obsidian/",
         "--glob=!.terraform/",
+        "--glob=!node_modules/",
       },
 
       mappings = {
@@ -128,12 +130,10 @@ function M.config()
           "rg",
           "--files",
           "--hidden",
-          "-g",
-          "!.git",
-          "-g",
-          "!.obsidian",
-          "-g",
-          "!.terraform",
+          "--glob=!.git/",
+          "--glob=!.obsidian/",
+          "--glob=!.terraform/",
+          "--glob=!node_modules/",
         },
         -- theme = "dropdown",
         previewer = true,
